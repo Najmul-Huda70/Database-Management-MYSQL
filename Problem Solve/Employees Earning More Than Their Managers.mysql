@@ -1,0 +1,5 @@
+# problem : https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
+# solve : https://leetcode.com/submissions/detail/1650357582/
+SELECT EMP.NAME AS Employee
+FROM EMPLOYEE AS EMP,EMPLOYEE AS MNG
+WHERE EMP.MANAGERID = MNG.ID AND EMP.SALARY > MNG.SALARY
